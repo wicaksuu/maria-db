@@ -1,0 +1,15 @@
+image:
+  tag: latest
+auth:
+  rootPassword: "password"
+  database: "first-database"
+  username: "user"
+  password: "password"
+primary:
+  persistence:
+    enabled: true
+    size: 50Gi
+    storageClass: "nfs"
+    nfs:
+      server: "103.132.230.118"
+      path: "/data-store/maria-db"

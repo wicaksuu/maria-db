@@ -1,0 +1,17 @@
+defaultNamespace: mariadb
+helm:
+  releases:
+    - name: mariadb
+      chart: bitnami/mariadb
+      version: latest
+      values:
+        - ./values.yaml
+      targetCustomizations:
+        - name: local-madiunkab
+          clusterSelector:
+            matchLabels:
+              region: "local-madiunkab"
+        - name: region2-madiunkab
+          clusterSelector:
+            matchLabels:
+              region: "region2-madiunkab"
