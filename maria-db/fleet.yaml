@@ -3,7 +3,7 @@ helm:
   releases:
     - name: mariadb
       chart: bitnami/mariadb
-      version: latest
+      version: 19.0.5
       values:
         - ./values.yaml
       targetCustomizations:

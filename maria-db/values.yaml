@@ -1,5 +1,5 @@
 image:
-  tag: latest
+  tag: 19.0.5
 auth:
   rootPassword: "password"
   database: "first-database"
@@ -13,3 +13,4 @@ primary:
     nfs:
       server: "103.132.230.118"
       path: "/data-store/maria-db"
+replicaCount: 2
